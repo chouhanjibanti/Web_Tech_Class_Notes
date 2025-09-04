@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div ol{
+            background-color: yellow;
+        }
+
+        div ol li ol{
+            background-color: green;
+        }
+                div ol li {
+            background-color: green;
+        }
+
+        div ol li ul li label{
+            color: red;
+        }
+
+        div ol li ul li+li label{
+        color: blue;
+        }
+
+        div ol li ul li+li+li ol li label{
+        color: purple;
+        }
+
+        div ol li ul li+li+li ol li+li label{
+        color: white;
+        }
+
+        div ol li ul li+ li {
+            color: blue;
+        }
+
+        
+
+        section{
+            background-color: yellow;
+            height: 200px;
+            width: 200px;
+        }
+
+        section ol{
+            background-color: red;
+        }
+
+        section ol li span{
+            background-color: blue;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <ol>
+            <li>personal details
+                <ul type="square">
+                    <li><label for="">Name</label> <input type="text"></li>
+                    <li><label for="">Lastname</label> <input type="text"></li>
+                    <li>other details 
+                        <ol>
+                            <li><label for="">phoneno</label> <input type="text"></li>
+                            <li><label for="">Age</label> <input type="text"></li>
+                        </ol>
+                    </li>
+                </ul>
+            </li>
+            <li>Additional details
+                <ol start="100">
+                    <li><label for="">password</label><input type="text"></li>
+                    <li><label for="">File</label><input type="file"></li>
+                </ol>
+            </li>
+        </ol>
+    </div>
+
+    <section>
+        <ol>
+            <li><span>Blue</span></li>
+        </ol>
+    </section>
+</body>
+</html>
