@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 12px;
+            padding: 20px;
+        }
+
+        @media screen {
+            body::before{
+               content:"This is screen";
+               display: block;
+               font-weight: bold;
+            }
+        }
+
+        /* print only */
+        @Media print{
+          body{
+            background-color: white;
+            color: black;
+          }
+          body::before{
+            content: "Print version";
+            display: block;
+            font-weight: bold;
+          }
+        }
+
+        /* @media(min-width:400px){
+            body{
+                border: 5px dashed orange;
+            }
+        }
+
+          @media(max-width:600px){
+            body{
+                border: 5px dotted red;
+            }
+        } */
+
+        @media(min-width:700px) and (max-width:500px){
+            body{
+                background-color: red;
+                color: red;
+            }
+        }
+
+        @media(orientation: landscape){
+            body{
+                background-color: red;
+            }
+        }
+
+           @media(orientation: portrait){
+            body{
+                background-color: yellow;
+            }
+        }
+    </style>
+</head>
+<body>
+    <h1>Responsive media</h1>
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aspernatur, delectus?</p>
+</body>
+</html>

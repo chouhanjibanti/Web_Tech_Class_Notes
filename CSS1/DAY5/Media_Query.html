@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* .container{
+            border: 1px solid;
+            background-color: yellow;
+            padding: 3px;
+            margin: 3px;
+            display: flex;
+        }
+        .box{
+            height: 200px;
+            width: 200px;
+            border: 1px solid;
+            padding: 3px;
+            margin: 3px;
+        }
+        #box1{
+            background-color: green;
+        }
+          #box2{
+            background-color: blueviolet;
+        }
+          #box3{
+            background-color: chartreuse;
+        }
+          #box4{
+            background-color: gold;
+        } */
+
+        /* @media(min-width:840px){
+            .container{
+                flex-direction: column;
+                background-color: purple;
+            }
+        }
+        @media(max-width:400px){
+            .container{
+                flex-direction: column;
+                background-color: red;
+            }
+        } */
+
+        .container{
+            border: 1px solid;
+            background-color: green;
+            margin: 3px;
+            padding: 4px;
+            display: flex;
+        }
+
+         .box{
+            height: 200px;
+            width: 200px;
+            border: 1px solid;
+            padding: 5px;
+            margin: 5px;
+         }
+         #box1{
+            background-color: yellow;
+         }
+         #box2{
+            background-color: lightblue;
+         }
+
+         #box3{
+            background-color: purple;
+         }
+         #box4{
+            background-color: white;
+         }
+         /* 0-460px  -> boxes -> vertically */
+         @media(max-width:460px){
+          .container{
+            flex-direction: column;
+            background-color: chocolate;
+          }
+         }
+         @media(min-width:800px){
+            .container{
+                flex-direction: column;
+                background-color: white;
+            }
+         }
+    </style>
+</head>
+<body>
+    <!--  we use for the responsiveness -->
+
+    <!-- .container>div.box#box$*4{BOX-$} -->
+         <div class="container">
+            <div class="box" id="box1">BOX-1</div>
+            <div class="box" id="box2">BOX-2</div>
+            <div class="box" id="box3">BOX-3</div>
+            <div class="box" id="box4">BOX-4</div>
+         </div>
+
+</body>
+</html>

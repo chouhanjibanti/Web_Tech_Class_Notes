@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .translate-box {
+            height: 100px;
+            width: 100px;
+            background-color: green;
+            transition: transform 2s;
+        }
+
+        .translate-box:hover {
+            transform: translate(50px, 50px)
+        }
+
+        /* ====================================== */
+        .scale-box {
+            height: 100px;
+            width: 100px;
+            background-color: blue;
+            transition: transform 3s;
+        }
+
+        .scale-box:hover {
+            transform: scale(1.4);
+        }
+
+        /* =================================== */
+
+        .rotate-box {
+            height: 100px;
+            width: 100px;
+            background-color: rgb(255, 111, 0);
+            transition: transform 10s;
+        }
+
+        .rotate-box:hover {
+            transform: rotate(360deg);
+        }
+
+        /* ========================================= */
+
+        .skew-box {
+            height: 100px;
+            width: 100px;
+            background-color: chocolate;
+            transition: transform 3s;
+        }
+
+        .skew-box:hover {
+            transform: skew(20deg, 10deg);
+        }
+
+        /* ========================================= */
+
+
+        .combined-box {
+            height: 100px;
+            width: 100px;
+            background-color: aqua;
+            transition: transform 5s;
+        }
+
+        .combined-box:hover {
+            transform: translate(40px, 50px) scale(1.5) rotate(180deg) skew(10deg, 180deg);
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="translate-box">Translate-Box</div> <br>
+
+    <div class="scale-box">scale-Box</div> <br>
+
+    <div class="rotate-box">Rotate-Box</div> <br>
+
+    <div class="skew-box">skew-Box</div> <br>
+
+    <div class="combined-box">combined-Box</div>
+
+
+
+
+</body>
+
+</html>

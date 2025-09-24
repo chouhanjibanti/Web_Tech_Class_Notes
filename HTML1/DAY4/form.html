@@ -10,14 +10,18 @@
 
     <form action="" style="border: 1px solid;width: 400px;" autocomplete="on">
         <label for="xyz">FirstName : </label>
-        <input type="text" name="xyz" > <br>
+        <input type="text" name="xyz" placeholder="Enter your name"> <br>
 
          <label for="ln">LastName : </label>
         <input type="text" name="ln" autofocus> <br>
 
-        Email : <input type="email" required> <br>
+        Email : <input type="email" required placeholder="john@gmail.com"> <br>
 
         Phone : <input type="tel" maxlength="10" value="54567876" readonly> <br>
+
+
+        <label for="">password:</label>
+        <input type="password" minlength="8" maxlength="12">
 
         <label for="gen">Gender :</label>
         <input type="radio" name="gen">Male
@@ -30,8 +34,24 @@
         <input type="checkbox" name="hob">Swimming
         <input type="checkbox" name="hob">Playing <br>
 
+        File: <input type="file">  <br>
 
-        <button>Submit</button>
+        Date: <input type="date"> <br>
+
+        <input type="datetime">
+        <input type="datetime-local">
+
+
+        <!-- dropdown -->
+        <select name="" id="">Courses
+            <option value="">MCA</option>
+            <option value="">BCA</option>
+            <option value="">BTECH</option>
+            <option value="">MTECH</option>
+        </select>
+
+       <button type="reset">Reset</button>
+        <button type="submit">Submit</button>
     </form>
 </body>
 </html>

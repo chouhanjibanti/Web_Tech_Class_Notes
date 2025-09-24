@@ -22,7 +22,7 @@ Javascript :- Functionality , Event  JS ES6  [EcmaScript] -> let /const,arrow fu
 3. Variables -> let/const/var
 4. Type Casting -> 
 5. Conditional Statement -> if , ifelse , if elseif elseif else , switch
-6. Operators -> Arithmetic , Assignment , Relational , Logical , Comparison , Ternary 
+6. Operators -> Arithmetic , Assignment , Relational , Logical , Comparison , Ternary ,increment/decrement operator 
 7. Conditional Loop -> while , do-while , for loop
 8. Array 
 9. String 
@@ -41,6 +41,7 @@ Javascript :- Functionality , Event  JS ES6  [EcmaScript] -> let /const,arrow fu
 16. Async and Await
 17. setTimeout and setInterval
 18. Closure
+19. Hoisting 
 
 
 ReactJS :- 

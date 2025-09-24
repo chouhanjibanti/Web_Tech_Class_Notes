@@ -1,0 +1,51 @@
+#footer1{
+  background-color: #343535;
+  height: 100px;
+  width: 100%;
+   display: flex;
+   position: absolute;
+   top: 0px;
+}
+#demo{
+    list-style: none;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    color: white;
+    gap: 50px;
+}
+
+#img1{
+    background-color: grey;
+    height: 100%;
+}
+#demo1{
+    list-style: none;
+    display: flex;
+    position: absolute;
+    width: 100%;
+    color: white;
+    gap: 50px;
+    font-size: 40px;
+    align-items: center;
+      top: -10px;
+    margin-left: 1100px;
+}
+span{
+   position: absolute;
+   top: 50px;
+   margin-left: 1860px;
+}
+.suse-mono{
+  font-family: "SUSE Mono", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: bold;
+  font-style: normal;
+}
+#demo2{
+  color: white;
+  font-size: 55px;
+  position: absolute;
+  top: 80px;
+  margin-left: 280px;
+}
