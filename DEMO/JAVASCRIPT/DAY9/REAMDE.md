@@ -12,8 +12,8 @@ dom is an object oriented representation of the html file.
 Method of DOM :- 
 1. getElementById()
 2. getElementByClass()
-3. getElementByTagName()
-4. getElementByName
+3. getElementByTagName()  p , h1 , h2
+4. getElementByName() -> input name="name1"
 
 method of css
 queryselector() -> ("#demo")   ->target first one 

@@ -28,3 +28,30 @@ console.log(10+String(10));// 1010
 console.log(Number('100')+ '10');//
 
 
+// 153 :- 1*1*+3*3*3+5*5*5* =? 153
+// factorial :- 5! = 120
+// perfect number  -> 6 -> 1+2+3 = 6     28 -> 1+2+4+7+14= 28
+// palindrome 151 => 151
+// prime number -> 2, 3,5 , 7 , 11, 13 ,17 ,19
+// even -> 
+// leap year -> 
+// swaping of two number wothout third 
+
+// a  = 10 , b = 20; 
+
+// a = a+b; // a = 30
+// b = a-b; // b = 10
+// a = a-b; // a = 20
+
+// swaping of two number  third 
+
+// a  = 10 , b = 20; c= 0;
+
+// a = b;// a = 20
+// c = a; // c = 10;
+// b= c; //b = 10
+
+
+
+
+
