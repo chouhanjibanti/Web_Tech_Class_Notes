@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <form action="">
+      email : <input type="email" placeholder="Enter Email" id="email" /> <br />
+      Password : <input type="text" id="pass" /> <br />
+      name : <input type="text" placeholder="Enter name" id="name" /> <br />
+      phone : <input type="tel" id="phone" /> <br />
+      <button id="btn">Submit</button> <br />
+      <br />
+
+      <!-- logic for the data get -->
+      <input type="email" placeholder="Enter email for get data" id="email1" />
+      <button id="btn2">GetData</button>
+    </form>
+
+    <p id="result"></p>
+
+    <script>
+      let btn1 = document.getElementById("btn");
+
+      btn1.onclick = function (e) {
+        let email = document.getElementById("email").value;
+        let password = document.getElementById("pass").value;
+        let name = document.getElementById("name").value;
+        let phone = document.getElementById("phone").value;
+
+        let userData = {
+          name: name,
+          password: password,
+          phone: phone,
+        };
+
+        window.localStorage.setItem(email, JSON.stringify(userData));
+        alert(
+          "Data saved successfully............................................"
+        );
+      };
+
+      // ===================================================
+
+      // logic for data get
+      let btn2 = document.getElementById("btn2");
+      btn2.onclick = function (e) {
+        e.preventDefault(); // by deault behavious of the html form -> refresh
+        let email2 = document.getElementById("email1").value;
+
+        let userData1 = window.localStorage.getItem(email2);
+        if (userData1 !== null) {
+          let obj = JSON.parse(userData1);
+          document.getElementById("result").innerText =
+            "password = " +
+            obj.password +
+            " and   phone  " +
+            obj.phone +
+            " and  name : " +
+            obj.name;
+        } else {
+          document.getElementById("result").innerText = "data not found";
+        }
+      };
+    </script>
+  </body>
+</html>
+<!-- id , email , password , name , gender --> sessionStorage 
+ <!-- key :- id
+  value :- email , passwod , name ,gender -->

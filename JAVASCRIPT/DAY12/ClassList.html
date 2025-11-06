@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .highlight{
+            background-color: green;
+            color: red;
+        }
+        .hidden{
+            display: none;
+        }
+        /*  Create a button and after clicking on this button 
+        change the color in the box height 200px & width 200px  */
+
+        
+        
+    </style>
+</head>
+<body>
+
+    <button>click me</button>
+    <h1 style="height: 200px;width: 200px;border: 1px solid;"></h1>
+
+
+     <!-- classList :- It is a property of DOM in js -->
+      <!-- add , remove , toogle  -->
+
+      <h1 id="my">Hello Debugshala</h1>
+      <button onclick="addH()">Add</button>
+      <button onclick="removeH()">Remove</button>
+      <button onclick="toggleH()">toggle</button>
+      <button onclick="toggleVisible()">visible</button>
+
+      <script>
+        const my = document.getElementById("my");
+
+
+        function addH(){
+            my.classList.add("highlight")
+        }
+
+        function removeH(){
+         my.classList.remove("highlight")
+        }
+
+        function toggleH(){
+           my.classList.toggle("highlight")
+        }
+
+        function toggleVisible(){
+            my.classList.toggle("hidden")
+        }
+      </script>
+
+
+</body>
+</html>

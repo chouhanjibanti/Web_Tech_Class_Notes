@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <script>
+        let myPrimses1 = new Promise((resolve,reject)=>{
+            let day = 'Evening';
+            if(day === 'morning') {
+                resolve('it is morning');
+            } else {
+                reject('it is not morning')
+            }
+        })
+
+        myPrimses1.then((data)=>{
+           document.writeln(data)
+        }).catch((error)=>{
+            document.writeln(error)
+        })
+
+
+    </script>
+</body>
+</html>

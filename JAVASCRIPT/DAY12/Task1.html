@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <button id="demo">click me</button>
+    <h1 id="box" style="height: 200px; width: 200px; border: 1px solid"></h1>
+
+    <script>
+         let demo = document.getElementById("demo")
+      let box = document.getElementById("box")
+         demo.onclick = function(e){
+          let num = Math.round(Math.random()*10000).toString();
+          box.style.backgroundColor = `#${num}`;
+
+         }
+    </script>
+  </body>
+</html>

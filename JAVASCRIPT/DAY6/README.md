@@ -44,3 +44,11 @@ CBF
 
 
 
+case :- 
+
+camelCase :- var / method ->  getDemo , toUpperCase 
+Pascal Case :- function ->  ParentDemo 
+snake_case :- get_demo
+
+
+

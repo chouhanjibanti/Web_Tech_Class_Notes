@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <!-- Element in DOM 
+    firstChild 
+    firstElementChild
+    lastChild
+    lastElementChild
+    children  only tags
+    childNodes - tag , text , comment
+    nextSibling - p1 -> comment
+    nextElementSibling p1 - p2
+    parentElement
+    -->
+
+    <div id="container">
+      text node
+      <p id="p1">Paragraph 1</p>
+      <!-- comment kiya  -->
+      <p id="p2">Paragraph 2</p>
+      whitespace
+    </div>
+
+    <script>
+      let container = document.getElementById("container");
+      let p1 = document.getElementById("p1");
+      let p2 = document.getElementById("p2");
+
+      // first Child
+      //   console.log(container.firstChild); //  text node
+
+
+      // firstElementChild
+      //   console.log(container.firstElementChild);
+      //   <p id="p1">Paragraph 1</p>
+
+
+      // lastChild
+      // console.log(container.lastChild);// whitespace
+
+      
+      //lastElementChild
+      // console.log(container.lastElementChild);
+      //  <p id="p2">Paragraph 2</p>
+
+      // children
+      //   console.log(container.children);
+      // HTMLCOLLECTION(2)    [<p id="p1">Paragraph1</p> ,, <p id="p2">Paragraph 2</p>]
+
+      // childNode
+      // console.log(container.childNodes);
+      // NodeList(7) [text, p#p1, text, comment, text, p#p2, text]
+
+      // nextSibling
+      //   console.log(p1.nextSibling);
+      // comment
+
+      // nextElementSibling
+      // console.log(p1.nextElementSibling);
+      //  <p id="p2">Paragraph 2</p>
+
+      // parentElement
+      // console.log(p1.parentElement);
+      // console.log(p2.parentElement);
+      // output  :- <div id="container">
+      //   text node
+      //   <p id="p1">Paragraph 1</p>
+      //   <!-- comment kiya  -->
+      //   <p id="p2">Paragraph 2</p>
+      //   whitespace
+      // </div>
+    </script>
+  </body>
+</html>

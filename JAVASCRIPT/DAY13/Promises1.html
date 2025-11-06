@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      function fetchUserData(userId) {
+        return new Promise((resolve, reject) => {
+          console.log("fetching user data from the server....");
+
+          setTimeout(() => {
+            const users = {
+              1: { name: "yogesh", age: 22, city: "mhow" },
+              2: { name: "tushar", age: 22, city: "indore" },
+              3: { name: "harsh", age: 21, city: "vidisha" },
+            };
+            if (users[userId]) {
+              resolve(users[userId]); // success
+            } else {
+              reject("user not found on server...");
+            }
+          }, 5000); // 2 second delay
+        });
+      }
+
+      fetchUserData(10).then((user) => {
+        console.log("Data Received SuccessFully");
+        console.log("UserName ", user.name);
+        console.log("Age ", user.age);
+        console.log("City ", user.city);
+      }).catch((err)=>{
+        console.log(err);
+      }).finally(()=>{
+        console.log("Request completed (connection close)");
+      })
+    </script>
+  </body>
+</html>

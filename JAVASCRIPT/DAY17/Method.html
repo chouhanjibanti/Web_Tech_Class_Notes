@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- <h1 id="d1">tushar mehta</h1> -->
+    <!-- <h1 id="d1">hbin</h1> -->
+
+    <h3 class="c2">tushar</h3>
+    <h3 class="c2">yogesh</h3>
+
+    <script>
+        // example of id 
+        // [HTMLCOllection]
+    //    const d1 = document.getElementById("d1");
+    //    console.log(d1);
+    //    console.log(d1.textContent);
+    //    d1.textContent = "harsh sharma"
+    //    d1.style.backgroundColor = "red";
+    //    d1.style.border = "20px solid green"
+    //    d1.style.color = "yellow"
+    
+
+    // example of class
+    const c2 = document.getElementsByClassName("c2")
+    console.log(c2);
+    c2[0].style.backgroundColor = "green"
+    c2[1].style.backgroundColor = "blue"
+    c2[1].textContent = "Debugshala"
+
+    // it is not a pure array act as array
+    const check = Array.isArray(c2);
+    console.log(check);
+
+    // array 
+    const c = Array.from(c2)
+   const check2 = Array.isArray(c)
+   console.log(check2);
+
+    </script>
+</body>
+</html>

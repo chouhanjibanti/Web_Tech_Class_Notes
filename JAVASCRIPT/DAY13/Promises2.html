@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      function fetchPostData(postId) {
+        return new Promise((resolve, reject) => {
+          console.log("fetching post data from the server....");
+
+        fetch(`https://jsonplaceholder.typicode.com/posts/${postId}`)
+        .then((response)=>{
+            return response.json();
+        })
+        .then((data)=>{
+           if(!data.id){
+            reject("post not found in API")
+           }else{
+            resolve(data)
+           }
+        }).catch((err)=>{
+          reject("wrong data",+ err.message)
+        })
+        });
+      }
+
+      fetchPostData(50).then((post) => {
+        console.log("Data Received SuccessFully");
+        console.log("Post ID  ", post.id);
+        console.log("post Title ", post.title);
+        console.log("post body ", post.body);
+      }).catch((err)=>{
+        console.log(err);
+      }).finally(()=>{
+        console.log("Request completed (connection close)");
+      })
+    </script>
+  </body>
+</html>
+

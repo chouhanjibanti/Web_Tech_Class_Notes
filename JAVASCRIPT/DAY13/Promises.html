@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+       let myPromise = new Promise((resolve,reject)=>{
+           let day = "gm"
+           if (day==="gm") {
+                resolve("goodmoring")
+           } else {
+              reject("goodEvening")
+           }
+        })
+        myPromise.then((data)=>{
+            console.log(data);
+        }).catch((err)=>{
+            console.log(err);
+        }).finally(()=>{
+            // connection close
+            console.log("hy i am finally block");
+        })
+    </script>
+</body>
+</html>
