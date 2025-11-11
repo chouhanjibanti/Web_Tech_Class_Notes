@@ -1,45 +1,85 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-</head>
-<body>
+  </head>
+  <body>
     <!-- <h1 id="d1">tushar mehta</h1> -->
     <!-- <h1 id="d1">hbin</h1> -->
 
-    <h3 class="c2">tushar</h3>
-    <h3 class="c2">yogesh</h3>
+    <!-- <h3 class="c2">tushar</h3>
+    <h3 class="c2">yogesh</h3>-->
+
+    <!-- getElementByTagName -->
+    <p>debugshala</p>
+    <p>indore</p>
+
+    <!-- getElementByName -->
+    <input type="text" name="tushar"> 
+
+
+   <!-- querySelector  -->
+    <h3 id="demo10">Debugshala</h3>
+
+    <!-- querySelectorAll -->
+    <h1 class="c1">ITEM1</h1>
+    <h1 class="c1">ITEM2</h1>
+    <h1 class="c1">ITEM3</h1>
 
     <script>
-        // example of id 
-        // [HTMLCOllection]
-    //    const d1 = document.getElementById("d1");
-    //    console.log(d1);
-    //    console.log(d1.textContent);
-    //    d1.textContent = "harsh sharma"
-    //    d1.style.backgroundColor = "red";
-    //    d1.style.border = "20px solid green"
-    //    d1.style.color = "yellow"
-    
+      // example of id
+      // [HTMLCOllection]
+      //    const d1 = document.getElementById("d1");
+      //    console.log(d1);
+      //    console.log(d1.textContent);
+      //    d1.textContent = "harsh sharma"
+      //    d1.style.backgroundColor = "red";
+      //    d1.style.border = "20px solid green"
+      //    d1.style.color = "yellow"
 
-    // example of class
-    const c2 = document.getElementsByClassName("c2")
-    console.log(c2);
-    c2[0].style.backgroundColor = "green"
-    c2[1].style.backgroundColor = "blue"
-    c2[1].textContent = "Debugshala"
+      // example of class  -> HTMLCollection -> NodeList 
+      //     const c2 = document.getElementsByClassName("c2")
+      //     console.log(c2);
+      //     c2[0].style.backgroundColor = "green"
+      //     c2[1].style.backgroundColor = "blue"
+      //     c2[1].textContent = "Debugshala"
 
-    // it is not a pure array act as array
-    const check = Array.isArray(c2);
-    console.log(check);
+      //     // it is not a pure array act as array
+      //     const check = Array.isArray(c2);
+      //     console.log(check);
 
-    // array 
-    const c = Array.from(c2)
-   const check2 = Array.isArray(c)
-   console.log(check2);
+      //     // array
+      //     const c = Array.from(c2)
+      //    const check2 = Array.isArray(c)
+      //    console.log(check2);
+
+
+      // getElementByTagName - HTMLCOLLECTION - Array 
+    //   const p = document.getElementsByTagName("p");
+    //   console.log(p);
+    //   p[0].style.color = "red"
+    //   p[1].style.backgroundColor = "green"
+
+    // getElementByName - nodelIst 
+    // const tushar = document.getElementsByName("tushar")
+    // console.log(tushar);
+
+
+    // CSS Selector  -> querySelector , querySelectorAll
+    //   querySelector
+    const demo10 = document.querySelector("#demo10")
+    console.log(demo10);
+
+
+    // querySelectorAll - nodeList 
+    const c1 = document.querySelectorAll(".c1")
+    console.log(c1);
+
+
+
 
     </script>
-</body>
+  </body>
 </html>

@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+<!--1. firstChild 
+2. firstElementChild
+3. lastChild
+4. lastElementChild
+5. children
+6. childNodes
+7. nextSibling
+8. nextElementSibling
+9. parentElement -->
+    <div id="box">
+      text
+      <h1 id="h1">Heading 1</h1>
+      <!-- comment -->
+      <h1 id="h2">Heading 2</h1>
+      whiteSpace
+    </div>
+    <script>
+      const box = document.getElementById("box");
+      const h1 = document.getElementById("h1");
+      const h2 = document.getElementById("h2");
+
+      // first child
+      console.log(box.firstChild);// text
+
+      // firstElementChild
+      console.log(box.firstElementChild);//       <h1 id="h1">Heading 1</h1>
+
+
+      // lastChild
+      console.log(box.lastChild);
+
+    //   lastElementChild
+    console.log(box.lastElementChild);
+
+    // children // array// target element/tags
+    console.log(box.children);
+
+    // chileNodes // element ,text
+    console.log(box.childNodes);
+
+    // nextSibling 
+    console.log(h1.nextSibling);
+
+    // nextElementSibling
+    console.log(h1.nextElementSibling);
+
+
+// parentElement
+console.log(h1.parentElement);
+// console.log(h2.parentElement);
+    </script>
+  </body>
+</html>

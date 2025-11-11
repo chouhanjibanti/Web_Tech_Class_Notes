@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <!-- 
+    Event:- 
+onClick :- button
+onChange :- input
+onSubmit :- form
+addEventlistener
+
+Mouse :- 
+onMouseover
+onMouseLeave
+
+key :-
+onKeyUp
+onKeypress
+onKeyDown
+    -->
+
+    <!-- <button id="btn">Submit</button>
+
+    <button onclick="demo()">submit1</button>
+
+    <button id="otp">OTP Generate</button> -->
+
+    <!-- <button id="bgc">color generate</button>
+    <button id="bgc1">color generate 1</button>
+
+    <button id="bgc2">color generate 2</button>
+
+    <button id="onO">onMouseOver</button>
+
+        <button id="onL">onMouseLeave</button> -->
+
+    <!-- <button id="keypress">Key Press</button> -->
+
+
+  <!-- key check  -->
+    <!-- <h3 id="result"></h3> -->
+
+  <!-- ----------------------------------------------- -->
+
+    <form id="myForm">
+      <input type="text" id="name" placeholder="enter name" required />
+      <button type="submit">Submit</button>
+    </form>
+
+    <h3 id="result"></h3>
+
+      <!-- ----------------------------------------------- -->
+
+
+    <script>
+      // submit
+      // const btn = document.getElementById("btn")
+      // btn.onclick = function(e){
+      //     console.log("harsh Q ni aaya");
+      //     document.writeln("hy bhai")
+      // }
+
+      // submit1
+      // function demo(){
+      //     console.log("hy debugshala");
+      // }
+
+      // otp gerenate
+      // const otp1 = document.getElementById("otp")
+      // otp1.onclick = function(e){
+      //   const num =  Math.round(Math.random()*10000);
+      //   alert(`${num}`)
+      // }
+
+      // color generate
+      //   const bg1 = document.getElementById("bgc");
+      //   bg1.onclick = function (e){
+      //     const num = Math.round(Math.random() * 10000).toString(16);
+      //     document.body.style.backgroundColor = `#${num}`;
+      //   };
+
+      //    const bg2 = document.getElementById("bgc1");
+      //   bg2.onclick = function (e) {
+      //     const num = Math.round(Math.random() * 10000).toString(16);
+      //     document.body.style.backgroundColor = `#${num}`;
+      //   };
+
+      //    const bg3 = document.getElementById("bgc2");
+      //   bg3.onclick = function (e) {
+      //     const num = Math.round(Math.random() * 10000).toString(16);
+      //     document.body.style.backgroundColor = `#${num}`;
+      //   };
+      // hexadecimal -> 16
+      //    0 -9 A-F a09f
+
+      // onMouseOver
+      //   const btnNew = document.getElementById("onO")
+      //    btnNew.onmouseover = function(e){
+      //         alert("hy i am mouse hover ")
+      //    }
+
+      //     // onMouseleave
+      //   const btnNew1 = document.getElementById("onL")
+      //    btnNew1.onmouseleave = function(e){
+      //         alert("hy i am mouse Leave ")
+      //    }
+
+      //  const keypress = document.getElementById("keypress")
+      //  keypress.onkeyup = function(e){
+
+      //   document.writeln("hy ")
+      //  }
+
+
+      // ======================================================
+      // key check
+      // document.addEventListener("keydown",function(e){
+      //    document.getElementById("result").innerText = "you pressed  "+ e.key;
+      // })
+
+      // ======================================================
+
+      // form when i click the Enter Button then it will submit
+      const form = document.getElementById("myForm");
+      const input = document.getElementById("name");
+      const result = document.getElementById("result");
+
+      // enter press
+      input.addEventListener("keydown", function(e) {
+        if (e.key === "Enter") {
+          e.preventDefault();
+          result.innerText = "you pressed enter button and you form is submittted...";
+
+        }
+      });
+
+      // 
+      form.addEventListener("submit",function(e){
+        e.preventDefault();
+        result.innerText = "Form Submitted Hello "+ input.value
+      })
+    </script>
+  </body>
+</html>

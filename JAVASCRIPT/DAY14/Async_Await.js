@@ -45,7 +45,7 @@ async function getUsers(){
 
 async function runAll(){
     console.log("Starting process....");
-    console.log("sum of 10 or 20 ", add(10,20));
+    console.log("sum of 10 or 20 ", add(10,20));//30
     await getPosts(); // 
     await getUsers(); // waits until post are fetched
 
